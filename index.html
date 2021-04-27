@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="glider.css">
+  <link rel="icon" href="img/netflix-logo.jpg">
+  <title>Netflix</title>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a class="netflix-brand" href="#"></a>
+      <nav>
+        <button class="nav-button">Inicio</button>
+        <button class="nav-button">Séries</button>
+        <button class="nav-button">Filmes</button>
+        <button class="nav-button">Bombando</button>
+        <button class="nav-button">Minha lista</button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="main-container">
+      <div class="main-movie">
+        <div class="movie-info">
+          <h1 class="title">O Exterminador do Futuro</h1>
+          <div class="sinopse">
+            Num futuro próximo, a guerra entre humanos e máquinas foi deflagrada. Com a tecnologia a seu dispor, um plano inusitado é arquitetado pelas máquinas ao enviar para o passado um androide com a missão de matar a mãe daquele que viria a se transformar num líder e seu pior inimigo. Contudo, os humanos também conseguem enviar um representante para proteger a mulher e tentar garantir o futuro da humanidade.
+          </div>
+          <div class="watch-button">
+            <button class="watch">
+              <img src="img/play.svg" alt="play">&nbsp;&nbsp;&nbsp;Assistir
+            </button>
+            <button class="info">
+              <img src="img/info.svg" alt="info">&nbsp;&nbsp;&nbsp;Mais informações
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="othersmovies">
+        <h2 class="text-alta">Em alta</h2>
+        <div class="glider-contain">
+          <div class="glider">
+            <img class="carousel-image" src="img/batman.jpg" alt="">
+            <img class="carousel-image" src="img/troia.jpg" alt="">
+            <img class="carousel-image" src="img/pulp-fiction.jpg" alt="">
+            <img class="carousel-image" src="img/wall-street.jpg" alt="">
+            <img class="carousel-image" src="img/fast-furious.jpg" alt="">
+            <img class="carousel-image" src="img/karate-kid.jpg" alt="">
+            <img class="carousel-image" src="img/back-future.jpg" alt="">
+            <img class="carousel-image" src="img/b13.jpg" alt="">
+            <img class="carousel-image" src="img/green-book.jpg" alt="">
+            <img class="carousel-image" src="img/tropa-elite.jpg" alt="">
+          </div>
+          <button aria-label="Previous" class="glider-prev">«</button>
+          <button aria-label="Next" class="glider-next">»</button>
+          <div role="tablist" class="dots"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

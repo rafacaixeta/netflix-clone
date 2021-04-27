@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  height: 900px;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("img/terminator.png");
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.netflix-brand {
+  width: 93px;
+  height: 24px;
+  background-size: cover;
+  background-image: url("img/netflix-brand.jpg");
+  margin-right: 30px;
+}
+
+.nav-button {
+  color: white;
+  padding-left: 17px;
+  font-size: 15px;
+}
+
+.main-movie {
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 450px;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 55%;
+  margin: 0 40px;
+}
+
+.title {
+  font-size: 2.2rem;
+}
+
+.watch-button {
+  display: flex;
+  height: 40px;
+}
+
+.watch {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  padding: 0 25px;
+  margin-right: 12px;
+}
+
+.watch:hover {
+  background-color: #a8afb3;
+  transition: .1s;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #4d4d4d;
+  padding: 0 25px;
+}
+
+.info:hover {
+  background-color: #3e3d3d;
+}
+
+.text-alta {
+  color: white;
+  margin-left: 40px;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 600px;
+  }
+
+  .movie-info {
+    width: 63%;
+  }
+}
+
+@media (max-width: 425px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .netflix-brand {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-button {
+    padding-left: 8px;
+  }
+
+  .movie-info {
+    width: 67%;
+    margin-left: 40px;
+  }
+
+  .title {
+    font-size: 2.1rem;
+  }
+  
+  .sinopse {
+    display: none;
+  }
+
+  .watch-button {
+    display: block;
+  }
+
+  .watch {
+    margin-bottom: 10px;
+    padding: 7px 25px;
+  }
+
+  .info {
+    padding: 7px 25px;
+  }
+}
